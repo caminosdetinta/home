@@ -3,87 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caminos de Tinta</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            background: #444;
-            color: #fff;
-            text-align: center;
-            padding: 0.5rem 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 2rem;
-        }
-        section {
-            margin-bottom: 2rem;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-    </style>
+    <title>Caminos de Tinta - Editorial Literaria</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Caminos de Tinta</h1>
-    </header>
-    <nav>
-        <a href="#about">Sobre Nosotros</a>
-        <a href="#services">Servicios</a>
-        <a href="#contact">Contacto</a>
-    </nav>
-    <div class="container">
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos un equipo de creativos apasionados por las letras en todas sus manifestaciones. Ofrecemos servicios editoriales de alta calidad para satisfacer las necesidades de autores y lectores por igual.</p>
-        </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Revisión y edición de textos</li>
-                <li>Diseño gráfico y maquetación</li>
-                <li>Traducción literaria</li>
-                <li>Asesoramiento editorial</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>¿Tienes alguna consulta o necesitas más información? Escríbenos a <a href="mailto:info@caminosdetinta.com">info@caminosdetinta.com</a>.</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Caminos de Tinta. Todos los derechos reservados.</p>
+    <!-- Sección de inicio (fullscreen slider) -->
+    <section class="av-fullscreen-slider">
+        <div class="slide" style="background-image: url('imagen1.jpg');">
+            <h1>CAMINOS DE TINTA</h1>
+            <p>Editorial literaria de San Luis (Argentina) al MUNDO...</p>
+            <a href="#nosotros" class="button">Nosotros</a>
+            <a href="#contacto" class="button">Contáctanos!</a>
+        </div>
+        <div class="slide" style="background-image: url('imagen2.jpg');">
+            <h1>CAMINOS DE TINTA</h1>
+        </div>
+        <div class="slide" style="background-image: url('imagen3.jpg');">
+            <p>Editorial literaria de San Luis, Argentina</p>
+        </div>
+    </section>
+
+    <!-- Sección de proyectos -->
+    <section id="portfolio" class="projects-section">
+        <h2>Conoce PROYECTOS que hemos desarrollado. Nos encantaría añadir también el <b>TUYO</b>!</h2>
+        <a href="http://caminosdetinta.com/editorial-cdt" class="button">Editorial CDT</a>
+    </section>
+
+    <!-- Sección "Nosotros" -->
+    <section id="nosotros" class="about-section">
+        <img src="mariano-pennisi.jpg" alt="Mariano Pennisi" class="profile-image">
+        <h2>Este soy yo, <b>Mariano Pennisi</b>, director de la iniciativa de Caminos de Tinta.</h2>
+        <div class="separator"></div>
+        <p>Somos un equipo de <strong>CREATIVOS</strong>, que incluye profesionales de la narrativa, traductores, diseñadores gráficos y críticos literarios...</p>
+        <!-- Estadísticas -->
+        <div class="stats">
+            <div class="stat-item">
+                <span class="number">+120</span>
+                <span class="label">proyectos exitosos</span>
+            </div>
+            <div class="stat-item">
+                <span class="number">+10</span>
+                <span class="label">años de experiencia</span>
+            </div>
+            <div class="stat-item">
+                <span class="number">+50</span>
+                <span class="label">clientes satisfechos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios" class="testimonials-section">
+        <h2>Qué han dicho los <b>CLIENTES</b> sobre nuestro trabajo?</h2>
+        <div class="testimonial">
+            <p>La edición de «Infinito pixelado» fue ingresar a otra dimensión...</p>
+            <span class="author">Ana Claudia Machado</span>
+        </div>
+        <!-- Más testimonios aquí -->
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="services-section">
+        <h2>Algunas tareas que <b>PODEMOS HACER POR TI</b>...</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <h3>Maquetación de obra</h3>
+                <p>Es el pasaje de tu obra desde Word a un formato apto para la imprenta...</p>
+            </div>
+            <!-- Más servicios aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="contact-section">
+        <h2>Estemos en <b>CONTACTO</b>! Usa el formulario a continuación...</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="E-Mail" required>
+            <textarea placeholder="Déjanos tu mensaje!" required></textarea>
+            <button type="submit">ENVIAR</button>
+        </form>
+    </section>
+
+    <!-- Footer con redes sociales -->
+    <footer class="social-footer">
+        <h3>Puedes seguirnos en Instagram, Facebook o X</h3>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/caminosdetinta/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/caminosdetinta/" target="_blank">Facebook</a>
+            <a href="https://x.com/CaminosTinta/" target="_blank">Twitter</a>
+        </div>
     </footer>
 </body>
 </html>

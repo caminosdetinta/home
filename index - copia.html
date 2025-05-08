@@ -5,59 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caminos de Tinta - Editorial Literaria</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Favicon (opcional) -->
-    <link rel="icon" href="img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Menú actualizado -->
-    <nav>
-        <div class="logo">
-            <a href="#home"><img src="img/logo-cdt.png" alt="Logo CdT"></a>
-        </div>
-        <ul>
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#libros">PUBLICACIONES</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="#servicios">SERVICIOS</a></li>
-            <li><a href="#contacto">CONTACTO</a></li>
-            <li><a href="#redes">REDES</a></li>
-            <li><a href="noticias.html">NOTICIAS</a></li>
-			<li class="dropdown">
+    <!-- Header con Menú -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="https://caminosdetinta.com" class="logo-link">
+                	<img src="Img/CdTREDONDO.png" alt="Logo Caminos de Tinta" class="logo">
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li class="dropdown">
                         <a href="#">Editorial CDT <i class="fas fa-chevron-down"></i></a>
                         <ul class="submenu">
                             <li><a href="#">Lista de Géneros</a></li>
                             <li><a href="#">Catálogo Unipuesto</a></li>
                         </ul>
                     </li>
-        </ul>
-    </nav>
-
-    <!-- Sección Home -->
-    <section id="home">
-        <div class="banner">
-            <h1>CAMINOS DE TINTA</h1>
-            <p>Editorial literaria de San Luis (Argentina) al MUNDO…</p>
-            <div class="botones">
-                <a href="#nosotros" class="btn">Nosotros</a>
-                <a href="#contacto" class="btn">¡Contáctanos!</a>
-            </div>
+                </ul>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <!-- Sección Libros (grid 6x6) -->
-    <section id="libros">
-        <h2>Conoce PROYECTOS que hemos desarrollado.</h2>
-        <p>Nos encantaría añadir también el TUYO!</p>
-        <div class="grid-libros">
-            <!-- Placeholders para 36 libros -->
-            <div class="libro"><img src="img/placeholders/libro1.jpg" alt="Libro 1"></div>
-            <div class="libro"><img src="img/placeholders/libro2.jpg" alt="Libro 2"></div>
-            <!-- ... (repetir hasta libro36) -->
-        </div>
-        <a href="editorial.html" class="btn">Editorial CDT</a>
+    <!-- Sección 01: "Libros" -->
     </section>
-
- <!-- Sección 02: "Nosotros" -->
+	
+    <!-- Sección 02: "Nosotros" -->
     <section class="section-about">
         <div class="container">
             <div class="profile-header">

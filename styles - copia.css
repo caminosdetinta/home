@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Menú */
+nav {
+    background-color: #222;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00ced1; /* Turquesa */
+}
+
+/* Sección Home */
+#home {
+    height: 100vh;
+    background: url('img/placeholders/banner-home.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#home h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Grid de libros */
+.grid-libros {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.libro img {
+    width: 100%;
+    transition: transform 0.3s;
+}
+
+.libro img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .grid-libros {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

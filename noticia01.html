@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Noticia Completa</title>
   <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      margin: 0;
-      background-color: #f2f2f2;
-      display: flex;
-      justify-content: center;
-    }
-    img {
-      width: 100%;
-      max-width: 1200px; /* Limita el tamaño en pantallas grandes */
-      height: auto;
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #000; /* fondo negro para camuflar imagen */
+  }
+  body {
+    display: block;
+  }
+  img {
+    display: block;
+    width: 100vw; /* usa el ancho total de la ventana */
+    height: auto;
+  }
+</style>
 </head>
 <body>
   <img src="Img/noticia01.png" alt="Noticia">
